@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family: 'Almarai', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    background: #0E0ECC;
+    background: linear-gradient(to left, #0E0ECC, #992B9C);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    height: 90vh;
+}
+
+.image {
+    flex: 1;
+    padding:20px;
+    text-align: center;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 6px rgb(255, 217, 0);
+    
+}
+
+.text {
+    flex: 1;
+    padding: 100px;
+    text-align: right;
+    font-size: 2em;
+}
+
+.text h2 {
+    color: rgb(255, 217, 0);
+}
+.text p {
+    color: #ffffff;
+}
+
+
+button {
+    border-radius: 10px;
+    background-color: #55b993;
+    box-shadow: 5px 5px 10px #557fb9;
+    font-size: 1em;
+    padding: 10px;
+    color: white;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: #09a36b;
+}
+
+/* Media query for small devices like smartphones */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        /* Adjust font size for small screens */
+    }
+
+    .container {
+        flex-direction: column;
+        height: 30vh;
+        
+    }
+
+    .image {
+        width: 90%;
+       padding: 0 !important;
+    }
+
+    .text {
+        text-align: center;
+        padding: 0px !important;
+        line-height: 1.4;
+    }
+}
+
+/* Media query for tablets and medium-sized devices */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        /* Adjust font size for medium-sized screens */
+    }
+
+    .text {
+        padding: 0 50px 0 0px;
+    }
+}
+
+/* Media query for larger devices like desktops and laptops */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+        /* Adjust font size for large screens */
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Image and Text</title>
+    <link rel="stylesheet" href="1.css">
+    <link href="https://fonts.cdnfonts.com/css/almarai" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="240967.jpg" alt="Image Description">
+        </div>
+        <div class="text">
+            <h2>ضمان ذهبي الى نهاية الاشتراك</h2>
+            <p> اشتراك فالكون
+                الاشتراك الاقوى في الوطن العربي</p>
+            <button id="whatsappButton">
+            <i class="fab fa-whatsapp"></i>
+            تواصل معي
+        </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('whatsappButton').addEventListener('click', function() {
+            // Define the phone number and message you want to send
+            var phoneNumber = '+966597207446';  // Replace with the recipient's phone number
+            var message = 'السلام عليكم ، متوفر اشتراك فالكون؟ ';
+        
+            // Encode the phone number and message for the URL
+            var encodedPhoneNumber = encodeURIComponent(phoneNumber);
+            var encodedMessage = encodeURIComponent(message);
+        
+            // Create the WhatsApp message URL
+            var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + encodedPhoneNumber + '&text=' + encodedMessage;
+        
+            // Open the WhatsApp URL in a new tab or window
+            window.open(whatsappUrl, '_blank');
+        });
+        </script>
+</body>
+</html>
