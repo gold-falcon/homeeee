@@ -22,7 +22,7 @@ body {
     height: 90vh;
 }
 
-.image {
+section.image {
     flex: 1;
     padding:20px;
     text-align: center;
